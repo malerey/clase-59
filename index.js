@@ -14,7 +14,7 @@ botonModo.onclick = () => {
 
 const usuarioGuardado = localStorage.getItem('usuario');
 const user = JSON.parse(usuarioGuardado)
-if (user.nombre) {
+if (user && user.nombre) {
   
   console.log(user)
   mensajeNombre.textContent = user.nombre;
